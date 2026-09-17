@@ -1,10 +1,20 @@
 # Patricio Martinez
-Data Science Student  
+
+Data Science Student
 UNC Charlotte
+
 ---
+
 ## About Me
-I am a Junior at UNCC pursuing my Data Science degree. My interests are drawing, working out, playing video games, and journaling. 
+
+I am a Junior at UNC Charlotte pursuing a degree in Data Science with a minor in Statistics. I am interested in data analysis, statistics, data visualization, and using data to tell meaningful stories.
+
+Outside of academics, I enjoy drawing, working out, playing video games, and journaling.
+
 ---
+
 ## Portfolio
-- [Blog](blog.md)
-- [Projects](projects.md)
+
+* [Professional Profile](profile.md)
+* [Projects](projects.md)
+* [Writing](blog.md)
