@@ -31,6 +31,10 @@ nav li {
 margin-bottom: 8px;
 }
 
+body {
+  background: yellow;
+}
+
 /* Navigation links */
 nav a {
 text-decoration: none;
