@@ -7,11 +7,88 @@
 
   <title>{{ site.title }}</title>
 
-  <style>
-    body {
-      background: yellow !important;
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+  }
+
+  .wrapper {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  header {
+    width: 260px;
+    padding: 40px 30px;
+    border-right: 1px solid #ddd;
+  }
+
+  header h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  header > p {
+    margin-top: 0;
+  }
+
+  nav h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin-bottom: 8px;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    flex: 1;
+    max-width: 850px;
+    padding: 40px 60px;
+  }
+
+  section h1 {
+    margin-top: 0;
+  }
+
+  @media (max-width: 700px) {
+    .wrapper {
+      flex-direction: column;
     }
-  </style>
+
+    header {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section {
+      padding: 30px;
+    }
+  }
+</style>
 </head>
 
 <body>
