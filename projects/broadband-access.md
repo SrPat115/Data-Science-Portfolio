@@ -52,7 +52,7 @@ Board of Governors of the Federal Reserve System. (2024). Consumer & community c
  - A peer-reviewed analysis of American Community Survey (ACS) data from 2014-2018 found strong associations between poverty rate and broadband access, and between educational attainment and broadband access. 
 
 **Source 2:**  
-Zahnd, W. E., Crouch, E., & White, D. (2022). Geographic, racial/ethnic, and socioeconomic inequities in broadband access. The Journal of Rural Health, 38(3), 519–526. https://doi.org/10.1111/jrh.12635 [Link](https://onlinelibrary.wiley.com/doi/abs/10.1111/jrh.12635) 
+Zahnd, W. E., Crouch, E., & White, D. (2022). Geographic, racial/ethnic, and socioeconomic inequities in broadband access. The Journal of Rural Health, 38(3), 519–526. [Link](https://onlinelibrary.wiley.com/doi/abs/10.1111/jrh.12635) 
 
 - The Federal Reserve analyzed 2022 ACS data and found that 74% of households in nonmetro areas had a broadband subscription compared with 85% in metro areas. It also reports that higher-income households had higher rates of broadband access and that communities with higher poverty levels had lower rates of device ownership.
 
