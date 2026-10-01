@@ -46,16 +46,19 @@ However, broadband access is not distributed equally across all communities. Dif
 
 ### Supporting Research
 
-[Add discussion of at least three credible sources here.]
 
 **Source 1:**  
-[APA citation]
+Board of Governors of the Federal Reserve System. (2024). Consumer & community context: Who lacks access to broadband? Federal Reserve.
+
+ - A peer-reviewed analysis of American Community Survey (ACS) data from 2014-2018 found strong associations between poverty rate and broadband access, and between educational attainment and broadband access. 
 
 **Source 2:**  
-[APA citation]
+Zahnd, W. E., Crouch, E., & White, D. (2022). Geographic, racial/ethnic, and socioeconomic inequities in broadband access. The Journal of Rural Health, 38(3), 519–526. https://doi.org/10.1111/jrh.12635
+
+- The Federal Reserve analyzed 2022 ACS data and found that 74% of households in nonmetro areas had a broadband subscription compared with 85% in metro areas. It also reports that higher-income households had higher rates of broadband access and that communities with higher poverty levels had lower rates of device ownership.
 
 **Source 3:**  
-[APA citation]
+Pew Research Center. (2024, January 31). Americans’ use of mobile technology and home broadband. Pew Research Center.
 
 These sources will be used to establish what previous research suggests about broadband access and the variables included in this project.
 
