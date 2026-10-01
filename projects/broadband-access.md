@@ -46,21 +46,23 @@ However, broadband access is not distributed equally across all communities. Dif
 
 ### Supporting Research
 
-
 **Source 1:**  
-Board of Governors of the Federal Reserve System. (2024). Consumer & community context: Who lacks access to broadband? Federal Reserve.
+Board of Governors of the Federal Reserve System. (2024). Consumer & community context: Who lacks access to broadband? Federal Reserve. [Link](https://www.federalreserve.gov/publications/2024-july-consumer-community-context.htm) 
 
  - A peer-reviewed analysis of American Community Survey (ACS) data from 2014-2018 found strong associations between poverty rate and broadband access, and between educational attainment and broadband access. 
 
 **Source 2:**  
-Zahnd, W. E., Crouch, E., & White, D. (2022). Geographic, racial/ethnic, and socioeconomic inequities in broadband access. The Journal of Rural Health, 38(3), 519–526. https://doi.org/10.1111/jrh.12635
+Zahnd, W. E., Crouch, E., & White, D. (2022). Geographic, racial/ethnic, and socioeconomic inequities in broadband access. The Journal of Rural Health, 38(3), 519–526. https://doi.org/10.1111/jrh.12635 [Link](https://onlinelibrary.wiley.com/doi/abs/10.1111/jrh.12635) 
 
 - The Federal Reserve analyzed 2022 ACS data and found that 74% of households in nonmetro areas had a broadband subscription compared with 85% in metro areas. It also reports that higher-income households had higher rates of broadband access and that communities with higher poverty levels had lower rates of device ownership.
 
 **Source 3:**  
-Pew Research Center. (2024, January 31). Americans’ use of mobile technology and home broadband. Pew Research Center.
+Pew Research Center. (2024, January 31). Americans’ use of mobile technology and home broadband. Pew Research Center. [Link](https://www.pewresearch.org/internet/2024/01/31/americans-use-of-mobile-technology-and-home-broadband) 
 
-These sources will be used to establish what previous research suggests about broadband access and the variables included in this project.
+- Pew Research Center conducted a 2023 survey that found that 57% of adults in households earning less than $30,000 subscribed to high-speed internet at home, compared with 95% among households earning $100,000 or more. They also found differences by education. Rural adults had a 73% home broadband subscription rate, compared with 77% among urban adults and 86% among suburban adults.
+
+**What The Previous Research Suggests**
+The literature suggests broadband access is strongly associated with socioeconomic properties such as income, poverty rates, and educational attainment, as well as geographical location. Based on this literature, the project examines whether county-level differences in income, poverty, educational attainment, housing costs, unemployment, and rural population can help explain differences in broadband access.
 
 ---
 
