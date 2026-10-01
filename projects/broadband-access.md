@@ -61,7 +61,7 @@ Pew Research Center. (2024, January 31). Americans’ use of mobile technology a
 
 - Pew Research Center conducted a 2023 survey that found that 57% of adults in households earning less than $30,000 subscribed to high-speed internet at home, compared with 95% among households earning $100,000 or more. They also found differences by education. Rural adults had a 73% home broadband subscription rate, compared with 77% among urban adults and 86% among suburban adults.
 
-**What The Previous Research Suggests**
+**What The Previous Research Suggests:**
 The literature suggests broadband access is strongly associated with socioeconomic properties such as income, poverty rates, and educational attainment, as well as geographical location. Based on this literature, the project examines whether county-level differences in income, poverty, educational attainment, housing costs, unemployment, and rural population can help explain differences in broadband access.
 
 ---
