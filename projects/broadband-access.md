@@ -309,46 +309,6 @@ The Actual vs. Predicted plot indicates a good model as well. Most of the points
 
 ---
 
-# 8. Model Interpretation and Insights
-
-The final model will be examined to understand which features contribute most strongly to its predictions.
-
-
-The most influential features were:
-
-1. [Feature]
-2. [Feature]
-3. [Feature]
-
-[Explain what these results mean.]
-
-## Model Behavior
-
-[Discuss important patterns found by the model.]
-
-## Prediction Errors
-
-[Examine where the model performed well and where it made larger errors.]
-
-Potential analyses include:
-
-- Actual vs. predicted values
-- Prediction error distribution
-- Largest prediction errors
-- Residual plots
-
-## What the Model Can Tell Us
-
-[Explain what conclusions are supported by the model.]
-
-## What the Model Cannot Tell Us
-
-[Explain limitations on interpretation.]
-
-In particular, an association between a feature and broadband access should not automatically be interpreted as evidence that the feature causes differences in broadband access.
-
----
-
 # 9. Limitations, Ethics, and Reflection
 
 ## Dataset Limitations
@@ -401,33 +361,31 @@ Discuss:
 
 ## Code
 
-**GitHub Repository:** [Insert link]
+**GitHub Repository:** [Link](https://github.com/SrPat115/Data-Science-Portfolio.git)
 
 **Jupyter Notebook:** [Insert link]
 
 ## Data Sources
 
-[Provide links and citations for all datasets used.]
+**Source:** [censuss.gov](census.gov)
+**Links:** 
+#**2024 American Community Survey (ACS) 5-Year data:** [https://www.census.gov/programs-surveys/acs/data/data-via-api.html](https://www.census.gov/programs-surveys/acs/data/data-via-api.html)
+
+#**2020 Decennial Census Demographic and Housing Characteristics File (DHC):** [https://www.census.gov/data/developers/data-sets/decennial-census/2020.html](https://www.census.gov/data/developers/data-sets/decennial-census/2020.html)
 
 ## References
 
-[APA references]
+Zahnd, W. E., Bell, N., & Larson, A. E. (2022). Geographic, racial/ethnic, and socioeconomic inequities in broadband access. The Journal of Rural Health, 38(3), 519–526. https://doi.org/10.1111/jrh.12635
+
+Board of Governors of the Federal Reserve System. (2024, July 15). Expanding America's bandwidth: Gaps in rural and underserved communities. https://www.federalreserve.gov/publications/2024-july-consumer-community-context.htm
+
+Gelles-Watnick, R. (2024, January 31). Americans' use of mobile technology and home broadband. Pew Research Center. https://www.pewresearch.org/internet/2024/01/31/americans-use-of-mobile-technology-and-home-broadband/
 
 ## AI Usage Disclosure
 
 Generative AI tools were used during this project for:
 
-[Describe specifically how AI was used.]
-
-Examples may include:
-
-- Explaining Python concepts
-- Troubleshooting code
-- Brainstorming analytical approaches
-- Reviewing writing
-- Helping understand statistical or machine-learning concepts
-
-All analysis, modeling decisions, interpretation, and final conclusions were reviewed and completed by the author.
+AI was used for formatting tables from Jupyter Notebook to GitHub, creating plots, and summarizing and formatting sources. 
 
 ---
 
@@ -437,4 +395,4 @@ This project investigates whether socioeconomic characteristics can be used to p
 
 **Tools:** Python · Pandas · NumPy · Matplotlib · Seaborn · Scikit-learn
 
-**Project Status:** [In Progress / Complete]
+**Project Status:** [Complete]
