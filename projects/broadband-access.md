@@ -160,12 +160,14 @@ This visualization will be used to determine whether broadband access is relativ
 
 ## Feature Distributions
 
-# Heatmap
+### Heatmap
 <img width="945" height="790" alt="image" src="https://github.com/user-attachments/assets/3c5740ed-dd64-4944-818f-aad980e64981" />
 
-# Histograms - [Here](insert link here)
+### Histograms - [Here](insert link here)
 
-# Boxplots - [Here](insert link here)
+### Boxplots - [Here](insert link here)
+
+### Scatterplots - [Here](insert link) 
 
 ## Relationships Between Variables
 
