@@ -341,7 +341,7 @@ Discuss:
 
 **GitHub Repository:** [Link](https://github.com/SrPat115/Data-Science-Portfolio.git)
 
-**Jupyter Notebook:** [pdf](https://raw.githubusercontent.com/SrPat115/Data-Science-Portfolio/main/projects/assets/project2/Broadband-Access.html.pdf), [html](https://raw.githubusercontent.com/SrPat115/Data-Science-Portfolio/main/projects/assets/project2/Broadband-Access.html)
+**Jupyter Notebook:** [pdf](https://srpat115.github.io/Data-Science-Portfolio/projects/assets/project2/Broadband-Access.html.pdf), [html](https://raw.githubusercontent.com/SrPat115/Data-Science-Portfolio/main/projects/assets/project2/Broadband-Access.html)
 
 ## Data Sources
 
