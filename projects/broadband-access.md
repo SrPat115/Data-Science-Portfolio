@@ -171,12 +171,17 @@ This visualization will be used to determine whether broadband access is relativ
 
 ## Relationships Between Variables
 
-[Discuss important relationships discovered during exploratory analysis.]
+* Median gross rent had a very strong positive relationship with broadband access (r ≈ 0.96). Counties with higher median rents generally had higher broadband access.
+* Rural population percentage had a strong negative relationship (r ≈ -0.86). Counties with larger rural populations generally had lower broadband access.
+* Unemployment rate had a moderately strong positive relationship (r ≈ 0.71), while median household income was also very similar (r ≈ 0.70).
 
+The strongest relationships suggest that housing/economic conditions and rurality are closely associated with differences in county-level broadband access.
+
+Important: The correlation between unemployment and broadband is positive, which may seem surprising; however, it does not mean higher unemployment causes higher broadband access.
 
 ## Outliers and Unusual Observations
 
-[Discuss any outliers or unusual county-level observations identified during exploration.]
+The distributions show some potentially unusual observations. Broadband access ranged from approximately 71.6% to 95.3%, while rural population percentage ranged from less than 1% to 100%. Unemployment also had a relatively high maximum of approximately 13.0%, compared with a mean of about 5.2%.
 
 ## Feature Selection
 
@@ -192,15 +197,17 @@ Before training the models, the dataset will be prepared for machine learning.
 
 ## Missing Values
 
+<img width="405" height="545" alt="Screenshot 2026-10-04 at 8 21 05 PM" src="https://github.com/user-attachments/assets/a3ca00a4-44a5-42ab-b490-4c87dce5a880" />g values.
 There were no missing values.
 
 ## Duplicate Observations
 
+<img width="614" height="106" alt="Screenshot 2026-10-04 at 8 22 17 PM" src="https://github.com/user-attachments/assets/6ea4dd3c-8233-4425-8474-aebd914ed221" />
 No duplicate values were found.
 
 ## Outliers
 
-[Explain whether outliers were identified and whether any action was taken.]
+These counties represent real geographic and socioeconomic conditions, so removing them simply because they are unusual could remove meaningful information from the analysis.
 
 ## Feature Transformation
 
@@ -244,39 +251,19 @@ The dataset was divided into:
 
 ## Baseline Model
 
-Before training more complex models, a baseline model was established to provide a point of comparison.
+**Baseline:** broadband_access ~ median_household_income + median_gross_rent + poverty_rate + bachelors_or_higher + unemployment_rate + rural_percent
 
-**Baseline:** [Insert baseline]
-
-[Explain why this baseline is appropriate for a regression problem.]
+OLS regression is appropriate here because it is a simple way to estimate how each socioeconomic characteristic is associated with broadband access and examine the direction and strength of those relationships. It also helps
+measure how much variation in broadband access the predictors explain using R², and
+make predictions of broadband access based on county characteristics.
 
 ## Machine-Learning Models
 
 At least two machine-learning models will be developed and compared.
 
-### Model 1: [Model Name]
+### Model 1: base_model (OLS Regression)
 
-[Explain why this model was selected.]
-
-### Model 2: [Model Name]
-
-[Explain why this model was selected.]
-
-### Optional Model 3: [Model Name]
-
-[Explain why this model was selected, if applicable.]
-
-## Hyperparameter Tuning
-
-[Describe whether model hyperparameters were tuned.]
-
-If tuning was performed:
-
-- Method: [Grid Search / Random Search / etc.]
-- Parameters tested: [Insert]
-- Validation strategy: [Insert]
-
-## Fair Model Comparison
+### Model 2: tree_model (Decision Tree)
 
 The models were trained and evaluated using the same training/testing strategy and evaluation metrics.
 
@@ -288,42 +275,37 @@ The models were trained and evaluated using the same training/testing strategy a
 
 The following metrics were used to evaluate model performance:
 
-### Mean Absolute Error (MAE)
-
-[Explain what MAE measures and why it is useful for this problem.]
-
-### Root Mean Squared Error (RMSE)
-
-[Explain what RMSE measures and why it is useful.]
-
-### R²
-
-[Explain what R² measures and why it is useful.]
-
-### VIF
-
-[Explanation] 
+| Metric                              | What it tells us                                                                                | Why it's useful                                                                                                                                                                                       |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **MAE (Mean Absolute Error)**       | On average, how far the model's predictions are from the actual broadband access value.         | Easy to understand because it's in **percentage points**. For example, an MAE of 2 means the model is off by about 2 percentage points on average. **Lower is better.**                               |
+| **RMSE (Root Mean Squared Error)**  | Similar to MAE, but it gives **extra weight to large prediction errors**.                       | Helps us see whether the model occasionally makes particularly bad predictions. **Lower is better.**                                                                                                  |
+| **R² (R-squared)**                  | Shows how much of the variation in broadband access the model can explain using the predictors. | Helps us judge how well the model explains differences between counties. For example, an R² of 0.80 means the model explains about **80% of the observed variation**. **Higher is generally better.** |
 
 ## Model Performance
 
 | Model | MAE | RMSE | R² |
 |---|---:|---:|---:|
-| Baseline | [ ] | [ ] | [ ] |
-| Model 1 | [ ] | [ ] | [ ] |
-| Model 2 | [ ] | [ ] | [ ] |
-| Model 3 | [ ] | [ ] | [ ] |
+| OLS Base Model | 1.51 | 1.84 | 0.80 |
+| OLS New Model | 1.51 | 1.86 | 0.79 |
+| OLS New Model 2 | 1.51 | 1.90 | 0.78 |
+| Decision Tree | 4.69 | 6.07 | -1.22 |
 
 ## Model Comparison
 
 [Explain how the models performed relative to the baseline and one another.]
 
-Rather than relying on a single metric, the models will be compared using multiple measures of prediction performance.
+The base_model performed the best, with favorable MAE, RMSE, and R^2. 
+Some experimentation was done by dropping some variables. "New Model" dropped unemployment_rate and showed nearly no change in performance metrics. "New Model 2" drops poverty_rate in addition to unemployment_rate. This model shows slightly less desirable performance metrics.
+
+Then there's the decision tree model. The reason the Decision Tree didn't do as well is because this is a regression problem. Its performance was so poor that it predicted worse than simply using the average broadband access for every county. 
 
 ## Final Model
 
-**Selected model:** [Insert model]
+**Selected model:** base_model
 
-[Explain why this model was selected based on the evaluation results.]
+This model was selected based on the performance metrics and actual vs. predicted plot. Together, the relatively low MAE and RMSE and the high R² suggest that the OLS Base Model makes reasonably accurate predictions and captures much of the variation in broadband access across North Carolina counties. 
+
+The Actual vs. Predicted plot indicates a good model as well. Most of the points are close to the red diagonal line, which suggests the model gives good predictions. 
 
 ---
 
@@ -331,9 +313,6 @@ Rather than relying on a single metric, the models will be compared using multip
 
 The final model will be examined to understand which features contribute most strongly to its predictions.
 
-## Feature Importance
-
-[Insert feature-importance visualization or other appropriate interpretation method.]
 
 The most influential features were:
 
@@ -374,10 +353,6 @@ In particular, an association between a feature and broadband access should not 
 
 ## Dataset Limitations
 
-[Discuss limitations of the data.]
-
-Potential considerations include:
-
 - County-level data may hide differences within individual communities.
 - The data may not capture every factor affecting broadband access.
 - Some variables may be measured differently across geographic areas.
@@ -385,19 +360,17 @@ Potential considerations include:
 
 ## Potential Bias
 
-[Discuss potential sources of bias in the dataset or modeling process.]
+The dataset only includes North Carolina counties and uses a limited number of socioeconomic variables. It may leave out important factors such as internet infrastructure, service availability, geographic barriers, and differences between households within the same county.
 
 ## Consequences of Incorrect Predictions
 
-[Explain what could happen if the model makes inaccurate predictions.]
+Incorrect predictions could affect rural communities, lower-income households, internet service providers, and government organizations when making decisions about broadband access and resources.
 
 For example, inaccurate predictions could potentially lead decision-makers to incorrectly identify areas with greater or lesser broadband needs.
 
 ## Real-World Use
 
-[Discuss whether the model would be appropriate for actual decision-making.]
-
-The model should be considered an analytical tool rather than a replacement for additional community-level research and human decision-making.
+The model could be useful as a supporting tool for identifying patterns and areas that may need further attention, but it should not be used by itself to make major decisions about funding or resource allocation.
 
 ## Future Improvements
 
