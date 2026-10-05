@@ -183,12 +183,6 @@ Important: The correlation between unemployment and broadband is positive, which
 
 The distributions show some potentially unusual observations. Broadband access ranged from approximately 71.6% to 95.3%, while rural population percentage ranged from less than 1% to 100%. Unemployment also had a relatively high maximum of approximately 13.0%, compared with a mean of about 5.2%.
 
-## Feature Selection
-
-The exploratory analysis will be used to determine which variables should be included in the final model.
-
-[Explain which variables were ultimately selected and why.]
-
 ---
 
 # 5. Data Preparation and Feature Selection
@@ -209,10 +203,6 @@ No duplicate values were found.
 
 These counties represent real geographic and socioeconomic conditions, so removing them simply because they are unusual could remove meaningful information from the analysis.
 
-## Feature Transformation
-
-[Describe any transformations performed.]
-
 Examples may include:
 
 - Scaling numerical variables
@@ -220,30 +210,12 @@ Examples may include:
 - Encoding categorical variables
 - Creating new features
 
-## Feature Selection
-
-The final features used in the model are:
-
-| Feature | Description | Reason for Inclusion |
-|---|---|---|
-| [Feature 1] | [Description] | [Reason] |
-| [Feature 2] | [Description] | [Reason] |
-| [Feature 3] | [Description] | [Reason] |
-| [Feature 4] | [Description] | [Reason] |
-| [Feature 5] | [Description] | [Reason] |
-
 ## Training and Testing Data
 
 The dataset was divided into:
 
-- **Training data:** [X]%
-- **Testing data:** [X]%
-
-[Explain why this split was selected.]
-
-### Preventing Data Leakage
-
-[Explain how preprocessing and feature selection were performed without allowing information from the test data to influence model training.]
+- **Training data:** 80%
+- **Testing data:** 20%
 
 ---
 
@@ -291,8 +263,6 @@ The following metrics were used to evaluate model performance:
 | Decision Tree | 4.69 | 6.07 | -1.22 |
 
 ## Model Comparison
-
-[Explain how the models performed relative to the baseline and one another.]
 
 The base_model performed the best, with favorable MAE, RMSE, and R^2. 
 Some experimentation was done by dropping some variables. "New Model" dropped unemployment_rate and showed nearly no change in performance metrics. "New Model 2" drops poverty_rate in addition to unemployment_rate. This model shows slightly less desirable performance metrics.
@@ -345,7 +315,7 @@ If additional time or data were available, I would consider:
 
 ## Reflection
 
-[Describe what you learned from the project.]
+I've learned how to compare two different models using performance metrics. I have also learned how to modify my GitHub so that my information can be presented in a neat and organized way. 
 
 Discuss:
 
@@ -363,7 +333,7 @@ Discuss:
 
 **GitHub Repository:** [Link](https://github.com/SrPat115/Data-Science-Portfolio.git)
 
-**Jupyter Notebook:** [Insert link]
+**Jupyter Notebook:** [pdf](projects/Broadband-Access.html.pdf), [html](projects/Broadband-Access.html)
 
 ## Data Sources
 
