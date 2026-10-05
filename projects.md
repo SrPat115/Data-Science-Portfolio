@@ -1,6 +1,6 @@
 # Projects
 
-## Housing Affordability in North Carolina
+## Project 1 - Housing Affordability in North Carolina
 
 **Status:** In Progress
 
@@ -12,7 +12,7 @@ An analysis of housing affordability across North Carolina counties and the soci
 
 ---
 
-## Broadband Access in North Carolina
+## Project 2 - Broadband Access in North Carolina
 
 **Status:** In Progress
 
