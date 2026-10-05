@@ -163,11 +163,11 @@ This visualization will be used to determine whether broadband access is relativ
 ### Heatmap
 <img width="945" height="790" alt="image" src="https://github.com/user-attachments/assets/3c5740ed-dd64-4944-818f-aad980e64981" />
 
-### Histograms - [Here](insert link here)
+### Histograms - [Here](https://raw.githubusercontent.com/SrPat115/Data-Science-Portfolio/main/projects/assets/project2/broadband-access-histograms.pdf)
 
-### Boxplots - [Here](insert link here)
+### Boxplots - [Here](https://raw.githubusercontent.com/SrPat115/Data-Science-Portfolio/main/projects/assets/project2/broadband-access-boxplots.pdf)
 
-### Scatterplots - [Here](insert link) 
+### Scatterplots - [Here](https://raw.githubusercontent.com/SrPat115/Data-Science-Portfolio/main/projects/assets/project2/broadband-access-scatterplots.pdf)
 
 ## Relationships Between Variables
 
