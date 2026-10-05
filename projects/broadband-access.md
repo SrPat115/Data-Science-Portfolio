@@ -1,4 +1,4 @@
-#Project 2: Broadband Access in North Carolina
+# Project 2: Broadband Access in North Carolina
 
 **Project:** DTSC 2301 — Data Science Modeling and Society  
 **Status:** Complete
