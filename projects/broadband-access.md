@@ -333,7 +333,7 @@ Discuss:
 
 **GitHub Repository:** [Link](https://github.com/SrPat115/Data-Science-Portfolio.git)
 
-**Jupyter Notebook:** [pdf](projects/Broadband-Access.html.pdf), [html](projects/Broadband-Access.html)
+**Jupyter Notebook:** [pdf](https://github.com/SrPat115/Data-Science-Portfolio/blob/main/projects/Broadband-Access.html.pdf), [html](https://github.com/SrPat115/Data-Science-Portfolio/blob/main/projects/Broadband-Access.html)
 
 ## Data Sources
 
