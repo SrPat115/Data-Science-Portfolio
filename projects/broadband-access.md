@@ -131,8 +131,6 @@ The initial features considered for the model are:
 
 ## Data Limitations
 
-### Dataset Limitations
-
 * **Geographic coverage:** The dataset only includes the 100 counties in North Carolina, so the results may not apply to other states or the entire United States.
 * **Different time periods:** Most variables come from the 2024 ACS 5-Year Estimates (2019–2023), while rural percentage comes from the 2020 Census. This means the variables do not all represent exactly the same period.
 * **Missing information:** The dataset had no missing values after data preparation. However, Census estimates may not capture every factor that influences broadband access.
@@ -162,12 +160,12 @@ This visualization will be used to determine whether broadband access is relativ
 
 ## Feature Distributions
 
-#Heatmap
+# Heatmap
 <img width="945" height="790" alt="image" src="https://github.com/user-attachments/assets/3c5740ed-dd64-4944-818f-aad980e64981" />
 
-#Histograms - [Here](insert link here)
+# Histograms - [Here](insert link here)
 
-#Boxplots - [Here](insert link here)
+# Boxplots - [Here](insert link here)
 
 ## Relationships Between Variables
 
@@ -177,7 +175,7 @@ This visualization will be used to determine whether broadband access is relativ
 
 The strongest relationships suggest that housing/economic conditions and rurality are closely associated with differences in county-level broadband access.
 
-Important: The correlation between unemployment and broadband is positive, which may seem surprising; however, it does not mean higher unemployment causes higher broadband access.
+The correlation between unemployment and broadband is positive, which may seem surprising; however, it does not mean higher unemployment causes higher broadband access.
 
 ## Outliers and Unusual Observations
 
@@ -191,12 +189,14 @@ Before training the models, the dataset will be prepared for machine learning.
 
 ## Missing Values
 
-<img width="405" height="545" alt="Screenshot 2026-10-04 at 8 21 05 PM" src="https://github.com/user-attachments/assets/a3ca00a4-44a5-42ab-b490-4c87dce5a880" />g values.
+<img width="405" height="545" alt="Screenshot 2026-10-04 at 8 21 05 PM" src="https://github.com/user-attachments/assets/a3ca00a4-44a5-42ab-b490-4c87dce5a880" />
+
 There were no missing values.
 
 ## Duplicate Observations
 
 <img width="614" height="106" alt="Screenshot 2026-10-04 at 8 22 17 PM" src="https://github.com/user-attachments/assets/6ea4dd3c-8233-4425-8474-aebd914ed221" />
+
 No duplicate values were found.
 
 ## Outliers
@@ -271,9 +271,15 @@ Then there's the decision tree model. The reason the Decision Tree didn't do as 
 
 ## Final Model
 
-**Selected model:** base_model
+**Selected model:** base_model: broadband_access ~ median_household_income + median_gross_rent + poverty_rate + bachelors_or_higher + unemployment_rate + rural_percent
+
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| OLS Base Model | 1.51 | 1.84 | 0.80 |
 
 This model was selected based on the performance metrics and actual vs. predicted plot. Together, the relatively low MAE and RMSE and the high R² suggest that the OLS Base Model makes reasonably accurate predictions and captures much of the variation in broadband access across North Carolina counties. 
+
+<img width="563" height="453" alt="image" src="https://github.com/user-attachments/assets/7fd2eb07-f2b7-4560-a0e6-9525a55d2e3b" />
 
 The Actual vs. Predicted plot indicates a good model as well. Most of the points are close to the red diagonal line, which suggests the model gives good predictions. 
 
@@ -333,7 +339,7 @@ Discuss:
 
 **GitHub Repository:** [Link](https://github.com/SrPat115/Data-Science-Portfolio.git)
 
-**Jupyter Notebook:** [pdf](https://github.com/SrPat115/Data-Science-Portfolio/blob/main/projects/Broadband-Access.html.pdf), [html](https://github.com/SrPat115/Data-Science-Portfolio/blob/main/projects/Broadband-Access.html)
+**Jupyter Notebook:** [pdf](projects/assets/project2/Broadband-Access.html.pdf), [html](projects/assets/project2/broadband-access.html)
 
 ## Data Sources
 
