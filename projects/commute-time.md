@@ -1,4 +1,4 @@
-# Commute Time in North Carolina Counties
+# Project 1 - Commute Time in North Carolina Counties
 
 ## Research Question
 
@@ -10,13 +10,21 @@ What factors are associated with average commute time across North Carolina coun
 
 ### Background
 
-Briefly explain why commute time matters.
+Commute time is something nearly everyone needs to consider in their schedules. Whether it's school, work, or even just to have fun doing whatever, reliable transportation is important. Commute times are also shown to be closely linked to stress levels and productivity. 
 
-For example:
+#### Sources: #### 
 
-Commute time can affect people's quality of life, transportation costs,
-access to employment, and time available for other activities. However,
-commute times can vary substantially between different communities.
+1) Federal Highway Administration. (2019). Does travel time reliability matter? U.S. Department of Transportation. https://ops.fhwa.dot.gov/publications/fhwahop19062/
+
+- The Federal Highway Administration explains that travel time affects more than transportation efficiency. Longer or unreliable travel can contribute to stress, lateness, reduced productivity, and less time available for family or other activities.
+
+2) Centers for Disease Control and Prevention. (2026, July 16). Transportation. Environmental Public Health Tracking. https://www.cdc.gov/environmental-health-tracking/php/data-research/transportation.html
+
+- The Centers for Disease Control and Prevention explains that transportation choices can influence air quality, traffic safety, and physical and mental health. Their Transportation Tracking Program also specifically includes average commute time as a county-level indicator.
+
+3) North Carolina Department of Transportation. (2019). Public transportation strategic plan: Connecting North Carolinians to opportunities. https://www.ncdot.gov/divisions/integrated-mobility/public-transit-services/statewide-strategic-plan/Documents/technical-report-chapter-1.pdf
+
+- The North Carolina Department of Transportation has specifically studied commuting patterns in North Carolina. Its statewide public transportation strategic plan found that commuting patterns are often regional, with longer-distance commuting markets occurring throughout the state. It also connects understanding commuting patterns to access to jobs, workforce development, and congestion management.
 
 ### Research Question
 
@@ -33,17 +41,11 @@ Explain who might care about this question:
 - Residents
 - Policy makers
 
-Important:
-
-This project examines **associations**, not causation.
-
 ---
 
 # 2. Data Description
 
 ## Dataset Source
-
-Explain where the data came from.
 
 - Data source:
 - API:
@@ -133,7 +135,7 @@ Average Commute Time by North Carolina County
 
 **What does this show?**
 
-Explain the major pattern you see.
+[Explain the major pattern you see.]
 
 ---
 
